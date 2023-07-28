@@ -11,6 +11,8 @@
 		1573628D2A73DA7F00C016AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573628C2A73DA7F00C016AC /* ContentView.swift */; };
 		1573628F2A73DA8100C016AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1573628E2A73DA8100C016AC /* Assets.xcassets */; };
 		157362932A73DA8100C016AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157362922A73DA8100C016AC /* Preview Assets.xcassets */; };
+		1573629B2A73DBC600C016AC /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573629A2A73DBC600C016AC /* PomodoroModel.swift */; };
+		1573629E2A73DCCA00C016AC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573629D2A73DCCA00C016AC /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		1573628E2A73DA8100C016AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157362902A73DA8100C016AC /* Pomodoro_Focus_Timer_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pomodoro_Focus_Timer_App.entitlements; sourceTree = "<group>"; };
 		157362922A73DA8100C016AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1573629A2A73DBC600C016AC /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
+		1573629D2A73DCCA00C016AC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				1573628A2A73DA7F00C016AC /* Pomodoro_Focus_Timer_AppApp.swift */,
-				1573628C2A73DA7F00C016AC /* ContentView.swift */,
+				1573629C2A73DBD200C016AC /* ViewModel */,
+				157362992A73DBB200C016AC /* View */,
 				1573628E2A73DA8100C016AC /* Assets.xcassets */,
 				157362902A73DA8100C016AC /* Pomodoro_Focus_Timer_App.entitlements */,
 				157362912A73DA8100C016AC /* Preview Content */,
@@ -67,6 +72,23 @@
 				157362922A73DA8100C016AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		157362992A73DBB200C016AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1573628C2A73DA7F00C016AC /* ContentView.swift */,
+				1573629D2A73DCCA00C016AC /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1573629C2A73DBD200C016AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1573629A2A73DBC600C016AC /* PomodoroModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1573629B2A73DBC600C016AC /* PomodoroModel.swift in Sources */,
 				1573628D2A73DA7F00C016AC /* ContentView.swift in Sources */,
+				1573629E2A73DCCA00C016AC /* Home.swift in Sources */,
 				1573628B2A73DA7F00C016AC /* Pomodoro_Focus_Timer_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
